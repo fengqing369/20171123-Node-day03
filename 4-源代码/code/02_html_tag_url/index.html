@@ -1,0 +1,18 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>index.html他所在的网络路径是/1/2/3/index.html</title>
+</head>
+<body>
+        <!-- http://127.0.0.1:8888/1/2/3/a.js-->
+        <script type="text/javascript" src="./a.js"></script>
+        <!-- http://127.0.0.1:8888/1/2/3/b.js -->
+        <script type="text/javascript" src="b.js"></script>
+        <!-- http://127.0.0.1:8888/1/2/c.js  -->
+        <script type="text/javascript" src="../c.js"></script>
+        <!-- http://127.0.0.1:8888/d.js -->
+        <script type="text/javascript" src="../../../../../../d.js"></script>
+        <!-- http://127.0.0.1:8888/e.js -->
+        <script type="text/javascript" src="/e.js"></script>
+</body>
+</html>

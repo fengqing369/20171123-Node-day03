@@ -1,0 +1,18 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/public/css/index.css">
+</head>
+<body>
+    <ul>
+        {{each heros}}
+           <li>{{$value.name}}  <a href="/showHero?id={{$value.id}}">q查看详情</a>
+           <a href="/showHero/{{$value.id}}">p查看详情</a>
+           </li>
+        {{/each}}
+    </ul>
+    <img src="/public/img/2.jpg">
+    <script type="text/javascript" src="/public/js/index.js"></script>
+</body>
+</html>
